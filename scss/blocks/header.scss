@@ -9,6 +9,9 @@
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
+        .logo{
+            margin-bottom: 2px;
+        }
         nav{
             padding-top: 7px;
             width: 618px;
@@ -152,6 +155,88 @@
             }
             &:not(:last-child){
                 margin-right: 20px;
+            }
+        }
+    }
+}
+
+@media(max-width:1550px){
+    .header{
+        padding: 0 100px;
+        .title{
+            margin-top: 100px;
+            span{
+                font-size: 4vw;
+            }
+            h1{
+                font-size: 10vw;
+                line-height: 9vw;
+            }
+        }
+        .top-menu{
+            flex-direction: column;
+            .logo{
+                margin-bottom: 30px;
+            }
+            nav{
+                flex-direction: column;
+                align-items: center;
+                .header-icons{
+                    margin-top: 30px;
+                }
+            }
+        }
+    }
+}
+
+@media(max-width:740px){
+    .header{
+        padding: 0 50px;
+        .top-menu{
+            width: 100%;
+            flex-wrap: wrap;
+            nav{
+                flex-wrap: wrap;
+                width: 100%;
+                .menu-links{
+                    flex-wrap: wrap;
+                    width: 100%;
+                }
+            }
+        }
+        .header-links{
+            display: none;
+        }
+        .header-btn{
+            padding-bottom: 100px;
+        }
+    }
+}
+
+@media(max-width:410px){
+    .header{
+        padding: 0 5px;
+        .top-menu{
+            nav{
+                .menu-links{
+                    justify-content: center;
+                    li{
+                        &:not(:last-child){
+                            margin-right: 10px;
+                        }
+                    }
+                }
+            }
+        }
+        .title{
+            margin-top: 30px;
+            span{
+                font-size: 8vw;
+                margin-bottom: 10px;
+            }
+            h1{
+                font-size: 16vw;
+                line-height: 14vw;
             }
         }
     }
