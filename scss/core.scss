@@ -1,0 +1,11 @@
+.container{
+    @include min-max(320px, 100%, 0px); 
+}
+.wrap{
+    @include min-max(320px, 1920px, 360px);
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+}
