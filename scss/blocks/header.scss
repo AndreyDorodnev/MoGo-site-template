@@ -10,6 +10,7 @@
         justify-content: space-between;
         align-items: center;
         nav{
+            padding-top: 7px;
             width: 618px;
             display: flex;
             justify-content: space-between;
@@ -34,6 +35,7 @@
                 }
             }
             .header-icons{
+                margin-left: 1px;
                 .icon{
                     display: inline-block;
                     svg{
@@ -59,29 +61,30 @@
     .title{
         color: $white;
         margin: 0 auto;
-        margin-top: 153px;        
+        margin-top: 151px;        
         span{
             font-family: 'Kaushan Script', cursive;
             display: block;
             text-align: center;
             font-size: 72px;
             text-align: center;
+            margin-bottom: 42px;
         }
         h1{
             margin: 0 auto;
             text-align: center;
             font-size: 150px;
             line-height: 140px;
-            font-weight: 600;
+            font-weight: 700;
             width: min-content;
             text-transform: uppercase;
-
+            letter-spacing: -6px;
         }
     }
 
     .line{
         margin: 0 auto;
-        margin-top: 60px;
+        margin-top: 56px;
         display: block;
         background-color: white;
         width: 60px;
@@ -99,10 +102,11 @@
             font-size: 14px;
             font-weight: 600;
             box-sizing: border-box;
-            width: 160px;
+            width: 162px;
             height: 40px;
-            border: 1px solid $white;
-            padding: 12px 30px 0;
+            border: 3px solid $white;
+            padding: 12px 0;
+            text-align: center;
             transition: 0.3s;
             &:hover{
                 border-color: $pink;
@@ -113,7 +117,7 @@
     }
 
     .header-links{
-        margin-top: 160px;
+        margin-top: 157px;
         display: flex;
         justify-content: space-between;
         width: 100%;
@@ -125,12 +129,13 @@
             color: $white;
             text-transform: uppercase;
             font-size: 18px;
-            font-weight: 500;
+            font-weight: 400;
             border-top: 3px solid $white;
-            padding-top: 26px;
+            padding-top: 24px;
             padding-bottom: 28px;
             span{
-                font-weight: 600;
+                font-weight: 700;
+                font-size: 24px;
             }
             &:after{
                 transition: 0.3s;
