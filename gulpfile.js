@@ -9,10 +9,10 @@ const run = require('run-sequence');
 const imagemin = require("gulp-imagemin");
 const imageminJpegRecompress = require('imagemin-jpeg-recompress');
 const pngquant = require('imagemin-pngquant');
-// const svgSprite = require('gulp-svg-sprite');
-// const svgmin = require('gulp-svgmin');
-// const cheerio = require('gulp-cheerio');
-// const replace = require('gulp-replace');
+const svgSprite = require('gulp-svg-sprite');
+const svgmin = require('gulp-svgmin');
+const cheerio = require('gulp-cheerio');
+const replace = require('gulp-replace');
 
 gulp.task('sass', function () {
     return gulp.src('scss/style.scss')
@@ -94,32 +94,32 @@ gulp.task('sass', function () {
         .pipe(gulp.dest('build/img'));
   });
 
-  // gulp.task('svg', function () {
-  //   return gulp.src('img/**/*.svg')
-  //       .pipe(svgmin({
-  //         js2svg: {
-  //           pretty: true
-  //         }
-  //       }))
-  //       .pipe(cheerio({
-  //         run: function ($) {
-  //           $('[fill]').removeAttr('fill');
-  //           $('[stroke]').removeAttr('stroke');
-  //           $('[style]').removeAttr('style');
-  //         },
-  //         parserOptions: {xmlMode: true}
-  //       }))
-  //       .pipe(replace('&gt;', '>'))
-  //       // build svg sprite
-  //       .pipe(svgSprite({
-  //         mode: {
-  //           symbol: {
-  //             sprite: "sprite.svg"
-  //           }
-  //         }
-  //       }))
-  //       .pipe(gulp.dest('build/img'));
-  // });
+  gulp.task('svg', function () {
+    return gulp.src('img/**/*.svg')
+        .pipe(svgmin({
+          js2svg: {
+            pretty: true
+          }
+        }))
+        .pipe(cheerio({
+          run: function ($) {
+            $('[fill]').removeAttr('fill');
+            $('[stroke]').removeAttr('stroke');
+            $('[style]').removeAttr('style');
+          },
+          parserOptions: {xmlMode: true}
+        }))
+        .pipe(replace('&gt;', '>'))
+        // build svg sprite
+        .pipe(svgSprite({
+          mode: {
+            symbol: {
+              sprite: "sprite.svg"
+            }
+          }
+        }))
+        .pipe(gulp.dest('build/img'));
+  });
 
   gulp.task('clean', function () {
     return del('build');
@@ -131,7 +131,7 @@ gulp.task('sass', function () {
       'copy',
       'sass',
       'images',
-      // 'svg',
+      'svg',
       fn
     );
   });
