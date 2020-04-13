@@ -1,0 +1,159 @@
+.works{
+    padding-top: 114px;
+    .works-header{
+        .section-title{
+            @include section-title();
+        }
+        .info{
+            margin: 0 auto;
+            text-align: center;
+            max-width: 965px;
+            color: $grey;
+            margin-top: 40px;
+            margin-bottom: 99px;
+            color: $grey;
+            line-height: 24px;
+            font-family: 'Roboto', sans-serif;
+        }
+    }
+    .gallery{
+        max-width: 1920px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        grid-template-rows: 390px 390px;
+        grid-template-areas: "img1 img2 img5 img6 "
+                             "img3 img4 img5 img7";
+        overflow: hidden;
+        .img1{
+            grid-area: img1;
+        }   
+        .img2{
+            grid-area: img2;
+        }    
+        .img3{
+            grid-area: img3;
+        }    
+        .img4{
+            grid-area: img4;
+        }    
+        .img5{
+            grid-area: img5;
+        }    
+        .img6{
+            grid-area: img6;
+        }    
+        .img7{
+            grid-area: img7;
+        }    
+        .work-img{
+            position: relative;
+            display: block;
+            max-width: 480px;
+            overflow: hidden;
+            img{
+                position: relative;
+                object-fit: cover;
+                width: 100%;
+                height: 100%;
+            }
+            &:hover{
+                .cover{
+                    opacity: 1;
+                }
+            }
+            .cover{
+                cursor: pointer;
+                position: absolute;
+                transition: 0.3s;
+                opacity: 0;
+                top: 0;
+                left: 0;
+                z-index: 2;
+                width: 100%;
+                height: 100%;
+                background-image: linear-gradient($work-image-color1,$work-image-color2); 
+                display: flex;
+                align-items: center;
+                .cover-title{
+                    margin: 0 auto;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    svg{
+                        fill: $white;
+                        width: 30px;
+                        height: 30px;
+                    }
+                    .caption{
+                        margin-top: 16px;
+                        color: $white;
+                        text-transform: uppercase;
+                        font-size: 14px;
+                    }
+                    .desc{
+                        color: $white;
+                        font-size: 15px;
+                        line-height: 24px;
+                    }
+                }
+            }
+        }     
+    }
+}
+
+@media(max-width:1550px){
+    .works{
+        .works-header{
+            padding: 0 100px;
+        }
+        .gallery{
+            grid-template-rows: 35vh 35vh;
+        }
+    }
+}
+
+@media(max-width:900px){
+    .works{
+        .works-header{
+            padding: 0 50px;
+        }
+        .gallery{
+            grid-template-columns: repeat(3,1fr);
+            grid-template-rows: 40vh 40vh 40vh;
+            grid-template-areas: "img1 img2 img7"
+                                 "img3 img3 img4"
+                                 "img6 img5 img5";
+            .work-img{
+                max-width: 100%;
+            }
+        }
+    }
+}
+
+@media(max-width:740px){
+    .works{
+        padding-top: 60px;
+        .works-header{
+            .info{
+                margin: 40px auto;
+            }
+        }
+    }
+}
+
+@media(max-width:560px){
+    .works{
+        .works-header{
+            padding: 0 10px;
+            .info{
+                padding: 30px 0px;
+            }
+        }
+        .gallery{
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(7,40vh);
+            grid-template-areas: "img1" "img2" "img3" "img4" "img5" "img6" "img7"
+        }
+    }
+}
