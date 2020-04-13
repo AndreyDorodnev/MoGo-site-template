@@ -1,7 +1,8 @@
 .design{
-    padding-top: 104px;
+    padding-top: 112px;
     position: relative;
     background: url('../../img/design-bg.jpg') center 30% no-repeat;
+    background-position: 0 31%;
     &::after{
         content: "";
         background-color: rgba($color: $white, $alpha: 0.85);
@@ -27,13 +28,14 @@
         img{
             display: block;
             margin: 0 auto;
+            padding-right: 51px;
         }
     }
     .image2{
         position: absolute;
         z-index: 2;
-        top: 54%;
-        left: 57%;
+        top: 55%;
+        left: 55%;
     }
 }
 
