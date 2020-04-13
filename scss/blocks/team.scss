@@ -109,5 +109,46 @@
     }
 }
 
+@media(max-width:1550px){
+    .team{
+        padding: 100px 100px 116px;
+    }
+}
 
+@media(max-width:900px){
+    .team{
+        .info{
+            margin-bottom: 40px;
+        }
+        .team-box{
+            flex-direction: column;
+            justify-content: center;
+            .teammate{
+                height: 470px;
+                &:not(:last-child){
+                    margin-right: auto;
+                }
+                margin: 40px auto;
+
+            }
+        }
+    }
+}
+
+@media(max-width:740px){
+    .team{
+        padding: 60px 50px 60px;
+    }
+}
+
+@media(max-width:400px){
+    .team{
+        padding: 40px 14px 40px;
+        .team-box{
+            .teammate{
+                height: 350px;
+            }
+        }
+    }
+}
 
