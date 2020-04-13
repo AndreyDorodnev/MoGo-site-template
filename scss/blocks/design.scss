@@ -1,0 +1,42 @@
+.design{
+    padding-top: 104px;
+    position: relative;
+    background: url('../../img/design-bg.jpg') center 30% no-repeat;
+    &::after{
+        content: "";
+        background-color: rgba($color: $white, $alpha: 0.85);
+        display: block;
+        position: absolute;
+        z-index: 1;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+    }
+    .section-title{
+        position: relative;
+        z-index: 2;
+        @include section-title();
+        margin-bottom: 46px;
+    }
+    .image1{
+        position: relative;
+        display: block;
+        z-index: 2;
+        margin: 0 auto;
+        img{
+            display: block;
+            margin: 0 auto;
+        }
+    }
+    .image2{
+        position: absolute;
+        z-index: 2;
+        top: 54%;
+        left: 57%;
+    }
+}
+
+
+
+
