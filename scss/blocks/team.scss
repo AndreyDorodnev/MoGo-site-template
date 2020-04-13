@@ -1,0 +1,113 @@
+.team{
+    padding-top: 100px;
+    padding-bottom: 116px;
+    .section-title{
+        @include section-title();
+    }
+    .info{
+        margin: 0 auto;
+        text-align: center;
+        max-width: 965px;
+        color: $grey;
+        margin-top: 40px;
+        margin-bottom: 90px;
+        line-height: 24px;
+        font-family: 'Roboto', sans-serif;
+    }
+
+    .team-box{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+        .teammate{
+            max-width: 380px;
+            &:not(:last-child){
+                margin-right: 20px;
+            }
+            .image{
+                position: relative;
+                max-width: 380px;
+                max-height: 470px;
+                width: 100%;
+                height: 100%;
+                background-color: $mint;
+                &:hover{
+                    img{
+                        transform: translate(-10px,-10px);
+                    }
+                    .cover{
+                        opacity: 1;
+                        transform: translate(-10px,-10px);
+                    }
+                }
+                img{
+                    transition: 0.3s;
+                    object-fit: cover;
+                    width: 100%;
+                    height: 100%;
+                }
+                .cover{
+                    cursor: pointer;
+                    position: absolute;
+                    transition: 0.3s;
+                    opacity: 0;
+                    top: 0;
+                    left: 0;
+                    z-index: 2;
+                    width: 100%;
+                    height: 100%;
+                    background-image: linear-gradient($image-color1,$image-color2); 
+                    display: flex;
+                    align-items: center;
+                    .social{
+                        margin: 0 auto;
+                        display: flex;
+                        justify-content: flex-start;
+                        .social-icon{
+                            width: 56px;
+                            height: 56px;
+                            background-color: $yellow;
+                            display: flex;
+                            align-items: center;
+                            transition: 0.3s;
+                            &:not(:last-child){
+                                border-right: 1px solid $pink;
+                            }
+                            svg{
+                                transition: inherit;
+                                margin: 0 auto;
+                                height: 26px;
+                                width: 28px;
+                                fill: $pink;
+                            }
+                            &:hover{
+                                background-color: $pink;
+                                svg{
+                                    fill: $white;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .caption{
+                padding-top: 30px;
+                text-align: center;
+                .name{
+                    text-transform: uppercase;
+                    color: $dark-grey;
+                    font-size: 14px;
+                }
+                .info{
+                    font-size: 15px;
+                    line-height: 24px;
+                    color: $grey;
+                }
+            }
+        }
+    }
+}
+
+
+
