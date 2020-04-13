@@ -39,6 +39,43 @@
     }
 }
 
+@media(max-width:1220px){
+    .design{
+        padding: 104px 100px 0;
+    }
+}
+
+@media(max-width:740px){
+    .design{
+        padding: 104px 50px 0;
+    }
+}
+
+@media(max-width:640px){
+    .design{
+        padding: 60px 10px 0;
+        border-bottom: 1px solid $light-grey;
+        .image1{
+            width: 100%;
+            img{
+                width: 100%;
+            }
+        }
+        .image2{
+            left: 0;
+        }
+    }
+}
+@media(max-width:440px){
+    .design{
+        .image2{
+            img{
+                // width: 86%;
+                width: 60vw;
+            }
+        }
+    }
+}
 
 
 
