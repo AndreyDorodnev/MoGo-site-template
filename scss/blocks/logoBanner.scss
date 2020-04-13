@@ -1,0 +1,42 @@
+.logo-banner{
+    background-color: $light-bg;
+    .banner{
+        padding: 60px 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .logo-image{
+
+        }
+    }
+}
+
+@media(max-width:1550px){
+    .logo-banner{
+        padding: 0 100px;
+    }
+}
+
+@media(max-width:960px){
+    .logo-banner{
+        .banner{
+            .logo-image{
+                &:nth-child(5), &:nth-child(6){
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+@media(max-width:740px){
+    .logo-banner{
+        padding: 0 50px;
+    }
+}
+
+@media(max-width:580px){
+    .logo-banner{
+        display: none;
+    }
+}
