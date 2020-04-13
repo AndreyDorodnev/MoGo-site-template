@@ -1,0 +1,84 @@
+.quotes{
+    background-color: $light-bg;
+    .quote{
+        box-sizing: border-box;
+        width: 100%;
+        padding: 70px 110px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        svg{
+            fill: $mint;
+            width: 150px;
+            height: 150px;
+            margin-right: 60px;
+        }
+        .quote-text{
+            p{
+                font-family: 'Roboto', sans-serif;
+                font-style: italic;
+                font-weight: 300;
+                font-size: 24px;
+                line-height: 36px;
+                color: $grey;
+                margin-bottom: 20px;
+            }
+            .line{
+                display: inline-block;
+                @include line(60px,3px,$pink);
+            }
+            .author{
+                display: inline-block;
+                margin-left: 10px;
+                color: $black;
+                font-size: 24px;
+            }
+        }
+    }
+}
+
+@media(max-width:1550px){
+    .quotes{
+        padding: 0 100px;
+        .quote{
+            padding: 70px 0;
+        }
+    }
+}
+
+@media(max-width:740px){
+    .quotes{
+        padding: 0 50px;
+    }
+}
+
+@media(max-width:640px){
+    .quotes{
+        .quote{
+            svg{
+                margin-right: 20px;
+            }
+            .quote-text{
+                p{
+                    font-size: 16px;
+                    line-height: 20px;
+                }
+                .author{
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+}
+
+@media(max-width:480px){
+    .quotes{
+        padding: 0 14px;
+        .quote{
+            padding: 20px 0;
+            svg{
+                display: none;
+            }
+        }
+    }
+}
