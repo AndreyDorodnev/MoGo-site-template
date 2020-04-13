@@ -1,0 +1,97 @@
+.service-desc{
+    padding-top: 109px;
+    padding-bottom: 120px;
+    .section-title{
+        @include section-title();
+    }
+    .info{
+        margin: 0 auto;
+        text-align: center;
+        max-width: 965px;
+        color: $grey;
+        margin-top: 40px;
+        margin-bottom: 91px;
+        line-height: 24px;
+        font-family: 'Roboto', sans-serif;
+    }
+    .service-box{
+        display: flex;
+        justify-content: space-between;
+
+        .image{
+            margin-right: 10px;
+            max-width: 568px;
+            img{
+                object-fit: cover;
+                width: 100%;
+                height: 380px;
+            }
+        }
+        .expand-list{
+            max-width: 600px;
+            width: 100%;
+            .expand-item{
+                box-sizing: border-box;
+                width: 100%;
+                transition: 0.3s;
+                .expand-header{
+                    padding: 14px;
+                    padding-right: 18px;
+                    cursor: pointer;
+                    border: 1px solid $light-grey;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    .label{
+                        display: flex;
+                        align-items: center;
+                        svg{
+                            width: 30px;
+                            height: 30px;
+                            fill: $mint;
+                            margin-right: 16px;
+                        }
+                        h4{
+                            text-transform: uppercase;
+                            color: $black;
+                            font-size: 14px;
+                            font-weight: 500;
+                        }
+                    }
+
+                    .arrow{
+                        width: 20px;
+                        height: 20px;
+                        font-size: 22px;
+                        display: inline-block;
+                        margin-right: 0;
+                        margin-left: auto;
+                        transform: rotate(-90deg);
+                    }
+                }
+                .expand-body{
+                    // @include scrollbar(10px,pink,red);
+                    transition: 0.3s;
+                    box-sizing: border-box;
+                    max-height: 190px;
+                    overflow: scroll;
+                    height: 0;
+                    border: 1px solid $light-grey;
+                    border-top: 0;
+                    p{
+                        font-size: 15px;
+                        line-height: 24px;
+                        color: $grey;
+                        padding: 20px 20px 26px 20px;
+                        max-width: 530px;
+                    }
+                }
+                &:hover{
+                    .expand-body{
+                        height: 190px;
+                    }
+                }
+            }
+        }
+    }
+}
