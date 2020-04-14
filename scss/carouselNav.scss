@@ -1,0 +1,24 @@
+.quotes{
+    .owl-carousel{
+        .owl-nav{
+            .owl-prev, .owl-next {
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                background: url('../img/icons/arrow.svg') 0 0 no-repeat !important;
+                width: 22px;
+                height: 22px;
+            }
+            .owl-next{
+                left: auto;
+                right: 5px;
+                transform: translate(-18px,-14px);
+            }
+            .owl-prev{
+                transform: rotate(180deg) translateY(12px) translateX(-15px);
+                
+            }
+        }
+    }
+}
+
