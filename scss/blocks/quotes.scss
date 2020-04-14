@@ -1,17 +1,18 @@
 .quotes{
+    position: relative;
     background-color: $light-bg;
     .quote{
         box-sizing: border-box;
         width: 100%;
-        padding: 70px 110px;
+        padding: 44px 110px;
         display: flex;
         justify-content: space-between;
         align-items: center;
         svg{
             fill: $mint;
-            width: 150px;
-            height: 150px;
-            margin-right: 60px;
+            width: 368px;
+            // height: 200px;
+            margin-right: 58px;
         }
         .quote-text{
             p{
@@ -26,6 +27,7 @@
             .line{
                 display: inline-block;
                 @include line(60px,3px,$pink);
+                margin-bottom: 4px;
             }
             .author{
                 display: inline-block;
