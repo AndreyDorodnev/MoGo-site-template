@@ -1,0 +1,13 @@
+footer{
+    h4{
+        border: 1px solid $light-grey;
+        padding: 25px 0;
+        text-align: center;
+        font-weight: 400;
+        font-size: 14px;
+        color: $dark-grey;
+        span{
+            color: $pink;
+        }
+    }
+}
