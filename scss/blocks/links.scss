@@ -2,6 +2,7 @@
     padding-top: 73px;
     .links-box{
         display: flex;
+        // justify-content: flex-start;
         justify-content: space-between;
 
         .contacts{
@@ -72,6 +73,70 @@
                     font-size: 14px;
                     text-transform: uppercase;
                 }
+            }
+        }
+        .blogs{
+            max-width: 384px;
+            width: 100%;
+            margin-left: 0px;
+            h3{
+                font-size: 14px;
+                color: $dark-grey;
+                text-transform: uppercase;
+                margin-top: 5px;
+                margin-bottom: 37px;
+            }
+            .blogs-box{
+                .blog-link{
+                    display: flex;
+                    justify-content: flex-start;
+                    img{
+                      width: 120px;
+                      height: 80px;  
+                      margin-right: 20px;
+                      margin-bottom: 30px;
+                    }
+                    .blog-info{
+                        p{
+                            text-transform: uppercase;
+                            color: $dark-grey;
+                            font-size: 12px;
+                            line-height: 18px;
+                            margin-top: 18px;
+                            max-width: 200px;
+                        }
+                        span{
+                            display: block;
+                            font-size: 13px;
+                            font-family: 'Roboto', sans-serif;
+                            font-weight: 300;
+                            font-style: italic;
+                            color: $grey;
+                            margin-top: 9px;
+                        }
+                    }
+                }
+            }
+        }
+        .instagram{
+            width: 273px;
+            h3{
+                font-size: 14px;
+                color: $dark-grey;
+                text-transform: uppercase; 
+                margin-top: 5px;
+                margin-bottom: 36px;
+            }
+            a{
+                display: block;
+                margin-top: 11px;
+                text-decoration: none;
+                font-family: 'Roboto', sans-serif;
+                font-weight: 300;
+                font-style: italic;
+                color: $dark-grey;
+                font-size: 13px;
+                line-height: 24px;
             }
         }
     }
