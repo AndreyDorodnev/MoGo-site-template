@@ -6,7 +6,8 @@ footer{
         font-weight: 400;
         font-size: 14px;
         color: $dark-grey;
-        span{
+        a{
+            text-decoration: none;
             color: $pink;
         }
     }
