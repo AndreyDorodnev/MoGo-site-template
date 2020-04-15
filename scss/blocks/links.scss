@@ -1,0 +1,78 @@
+.links{
+    padding-top: 73px;
+    .links-box{
+        display: flex;
+        justify-content: space-between;
+
+        .contacts{
+            max-width: 480px;
+            .logo{
+                margin-bottom: 36px;
+            }
+            .info{
+                font-family: 'Roboto', sans-serif;
+                font-size: 15px;
+                line-height: 24px;
+                color: $grey;
+                margin-bottom: 19px;
+            }   
+            .followers{
+                padding: 20px 0;
+                border-bottom: 1px solid $light-grey;
+                color: $dark-grey;
+                font-weight: 400;
+                font-size: 14px;
+                span{
+                    font-weight: 700;
+                    font-size: 18px;
+                }
+            }
+            .social{
+                margin: 15px 0;
+                span{
+                    text-transform: capitalize;
+                    font-family: 'Roboto', sans-serif;
+                    font-weight: 300;
+                    font-style: italic;
+                    color: $grey;
+                }
+                svg{
+                    fill: $mint;
+                    max-width: 16px;
+                    max-height: 16px;
+                    margin-right: 18px;
+                }
+            }
+            form{
+                box-sizing: border-box;
+                margin-top: 35px;
+                margin-left: -1px;
+                
+                input{
+                    padding-left: 9px;
+                    box-sizing: border-box;
+                    width: 230px;
+                    height: 40px;
+                    border: 1px solid $light-grey;
+                    font-family: 'Roboto', sans-serif;
+                    font-weight: 300;
+                    font-style: italic;
+                    color: $grey;
+                    background-color: $white;
+                }
+                button{
+                    transform: translateX(-4px);
+                    padding: 0;
+                    width: 150px;
+                    height: 40px;
+                    background-color: $mint;
+                    border: 0;
+                    color: $white;
+                    font-weight: 700;
+                    font-size: 14px;
+                    text-transform: uppercase;
+                }
+            }
+        }
+    }
+}
