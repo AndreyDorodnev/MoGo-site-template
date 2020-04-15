@@ -1,0 +1,54 @@
+.map{
+    padding-top: 50px;
+    padding-bottom: 58px;
+    position: relative;
+    background: url('../../img/map-bg.jpg') no-repeat;
+    background-position-x: 0;
+    background-position-y: 66%;
+    &::after{
+        content: "";
+        background-color: rgba($color: $white, $alpha: 0.85);
+        display: block;
+        position: absolute;
+        z-index: 1;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+    }
+    .label{
+        display: block;
+        text-decoration: none;
+        position: relative;
+        z-index: 2;
+        margin: 0 auto;
+        width: max-content;
+        svg{
+            display: block;
+            margin: 0 auto;
+            fill: $pink;
+            width: 40px;
+            height: 26px;
+        }
+        h3{
+            margin-top: 20px;
+            margin-bottom: 17px;
+            text-transform: uppercase;
+            color: $pink;
+            font-weight: 800;
+            font-size: 24px;
+            width: max-content;
+        }
+        .line{
+            display: block;
+            margin: 0 auto;
+            @include line(60px,3px,$pink);
+        }
+    }
+}
+
+@media(max-width:1000px){
+    .map{
+        padding: 50px 0 58px;
+    }
+}
