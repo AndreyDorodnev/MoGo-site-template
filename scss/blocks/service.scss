@@ -34,6 +34,7 @@
                 box-sizing: border-box;
                 width: 100%;
                 transition: 0.3s;
+                margin-bottom: 7px;
                 .expand-header{
                     padding: 14px;
                     padding-right: 18px;
@@ -61,10 +62,11 @@
                     }
                     .arrow{
                         padding-bottom: 6px;
+                        padding-left: 6px;
                         display: inline-block;
                         width: 20px;
                         height: 20px;
-                        transform: rotate(-90deg); 
+                        transform: rotate(90deg); 
                         margin-left: auto;
                         margin-right: 0;
                         svg{
@@ -79,7 +81,8 @@
                     transition: 0.3s;
                     box-sizing: border-box;
                     max-height: 190px;
-                    overflow: scroll;
+                    // overflow: scroll;
+                    overflow: hidden;
                     height: 0;
                     border: 1px solid $light-grey;
                     border-top: 0;
@@ -91,9 +94,15 @@
                         max-width: 530px;
                     }
                 }
-                &:hover{
-                    .expand-body{
-                        height: 190px;
+            }
+            .expand-active{
+                .expand-body{
+                    height: 182px;
+                }
+                .expand-header{
+                    .arrow{
+                        transform: rotate(-90deg); 
+                        padding-left: 0;
                     }
                 }
             }
