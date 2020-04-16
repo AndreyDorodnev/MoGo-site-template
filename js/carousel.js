@@ -9,14 +9,15 @@ $(document).ready(function(){
         0:{
             items:1,
             loop:true,
-            dots:false,
-            nav:true
+            dots:true,
+            nav:false
         },
-        // 1024:{
-        //     items:1,
-        //     dots:true,
-        //     nav:true
-        // },
+        870:{
+            items:1,
+            loop:true,
+            dots:false,
+            nav:true 
+        }
     }
 });
 });

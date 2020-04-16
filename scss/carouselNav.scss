@@ -1,24 +1,57 @@
-// .quotes{
+.owl-carousel{
+    .owl-nav{
+        .owl-prev, .owl-next {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background: url('../img/icons/arrow.svg') 0 0 no-repeat !important;
+            width: 22px;
+            height: 22px;
+        }
+        .owl-next{
+            left: auto;
+            right: 5px;
+            transform: translate(-18px,-14px);
+        }
+        .owl-prev{
+            transform: rotate(180deg) translateY(12px) translateX(-15px);
+            
+        }
+    }
+    .owl-dots{
+        width: 100%;
+        margin: 0 auto;
+        position: absolute;
+        text-align: center;
+        top: auto;
+        bottom: 10px;
+        .owl-dot{
+            width: 11px;
+            height: 11px;
+            border-radius: 50%;
+            background-color: $grey;
+            box-sizing: border-box;
+            cursor: pointer;
+            margin-right: 8px;
+        }
+        .active{
+            width: 15px;
+            height: 15px;
+        }
+    }
+}
+
+
+@media(max-width:1700px){
     .owl-carousel{
         .owl-nav{
-            .owl-prev, .owl-next {
-                position: absolute;
-                top: 50%;
-                transform: translateY(-50%);
-                background: url('../img/icons/arrow.svg') 0 0 no-repeat !important;
-                width: 22px;
-                height: 22px;
-            }
             .owl-next{
-                left: auto;
-                right: 5px;
-                transform: translate(-18px,-14px);
+                transform: translate(20px,-14px);
             }
             .owl-prev{
-                transform: rotate(180deg) translateY(12px) translateX(-15px);
-                
+                transform: rotate(180deg) translateY(12px) translateX(30px);
             }
         }
     }
-// }
+}
 
