@@ -23,8 +23,8 @@ $(document).ready(function(){
         })
     }
 
-    setActive($(expands[0]));
-    setEvents(expands);
+    setActive($(expands[0])); //set firt expander active
+    setEvents(expands); //set mouseenter events to change active expander
 
 
 });

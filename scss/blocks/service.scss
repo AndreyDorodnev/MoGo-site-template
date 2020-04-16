@@ -81,8 +81,7 @@
                     transition: 0.3s;
                     box-sizing: border-box;
                     max-height: 190px;
-                    // overflow: scroll;
-                    overflow: hidden;
+                    overflow-y: scroll;
                     height: 0;
                     border: 1px solid $light-grey;
                     border-top: 0;
