@@ -2,7 +2,7 @@
     .review{
         box-sizing: border-box;
         width: 100%;
-        padding: 100px 80px 130px;
+        padding: 102px 80px 130px;
         display: flex;
         justify-content: flex-start;
         align-items: center;
@@ -23,7 +23,7 @@
             }
         }
         .review-text{
-            margin-left: 25px;
+            margin-left: 30px;
             p{
                 font-family: 'Roboto', sans-serif;
                 font-weight: 300;
@@ -35,14 +35,16 @@
             }
             .line{
                 display: inline-block;
+                margin-bottom: 5px;
                 @include line(60px,3px,$pink);
             }
             .author{
                 display: inline-block;
-                margin-left: 10px;
+                margin-left: 6px;
                 color: $black;
                 font-size: 24px;
                 padding-top: 17px;
+                font-family: 'Kaushan Script', cursive;
             }
         }
     }

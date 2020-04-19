@@ -11,7 +11,7 @@
         svg{
             fill: $mint;
             width: 368px;
-            margin-right: 58px;
+            margin-right: 55px;
         }
         .quote-text{
             p{
@@ -30,9 +30,10 @@
             }
             .author{
                 display: inline-block;
-                margin-left: 10px;
+                margin-left: 4px;
                 color: $black;
                 font-size: 24px;
+                font-family: 'Kaushan Script', cursive;
             }
         }
     }

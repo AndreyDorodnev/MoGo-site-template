@@ -1,5 +1,5 @@
 .clients{
-    padding-top: 112px;
+    padding-top: 108px;
     padding-bottom: 60px;
     position: relative;
     background: url('../../img/clients/clients-bg.jpg') top center no-repeat;
@@ -41,6 +41,7 @@
                 max-height: 110px;
                 width: 100%;
                 border-radius: 50%;
+                transform: translate(6px,0);
                 img{
                     display: block;
                     position: relative;
@@ -59,14 +60,14 @@
             }
             .info{
                 padding-top: 19px;
-                margin-left: 30px;
+                margin-left: 37px;
                 max-width: 390px;
                 width: 100%;
                 .name {
                     color: $dark-grey;
                     font-size: 14px;
                     text-transform: uppercase;
-                    padding-bottom: 6px;
+                    padding-bottom: 7px;
                     font-weight: 400;
                 }
                 .desc{
@@ -74,16 +75,21 @@
                     font-size: 15px;
                     line-height: 24px;
                     padding-bottom: 4px;
+                    font-family: 'Roboto', sans-serif;
+                    font-style: italic;
+                    font-weight: 300;
                 }
                 .line{
                     display: inline-block;
                     @include line(60px,3px,$pink);
                 }
                 .text{
-                    padding-top: 15px;
+                    padding-top: 18px;
+                    margin-left: 2px;
                     color: $grey;
                     font-size: 15px;
                     line-height: 24px;
+                    font-family: 'Roboto', sans-serif;
                 }
             }
         }

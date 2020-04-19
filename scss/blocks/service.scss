@@ -1,6 +1,6 @@
 .service-desc{
     padding-top: 109px;
-    padding-bottom: 120px;
+    padding-bottom: 113px;
     .section-title{
         @include section-title();
     }
@@ -9,8 +9,8 @@
         text-align: center;
         max-width: 965px;
         color: $grey;
-        margin-top: 40px;
-        margin-bottom: 91px;
+        margin-top: 44px;
+        margin-bottom: 88px;
         line-height: 24px;
         font-family: 'Roboto', sans-serif;
     }
@@ -34,7 +34,7 @@
                 box-sizing: border-box;
                 width: 100%;
                 transition: 0.3s;
-                margin-bottom: 7px;
+                margin-bottom: 8px;
                 .expand-header{
                     padding: 14px;
                     padding-right: 18px;
@@ -50,14 +50,14 @@
                             width: 30px;
                             height: 30px;
                             fill: $mint;
-                            margin-right: 16px;
+                            margin-right: 14px;
                         }
                         h4{
                             text-transform: uppercase;
                             color: $black;
                             font-size: 14px;
                             font-weight: 500;
-                            margin-top: 7px;
+                            margin-top: 0px;
                         }
                     }
                     .arrow{
@@ -89,14 +89,17 @@
                         font-size: 15px;
                         line-height: 24px;
                         color: $grey;
-                        padding: 20px 20px 26px 20px;
+                        padding: 15px 20px 26px 18px;
                         max-width: 530px;
+                        font-family: 'Roboto', sans-serif;
+                        font-style: italic;
+                        font-weight: 300;
                     }
                 }
             }
             .expand-active{
                 .expand-body{
-                    height: 182px;
+                    height: 181px;
                 }
                 .expand-header{
                     .arrow{
