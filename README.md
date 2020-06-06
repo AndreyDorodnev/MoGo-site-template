@@ -9,7 +9,7 @@
 * Svg
 
 ## Available Scripts
-* npm run
+* npm start
 * npm build
 
 Github Page:
