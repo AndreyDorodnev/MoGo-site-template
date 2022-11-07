@@ -18,7 +18,7 @@
   "devDependencies": {
     "browser-sync": "^2.26.7",
     "del": "^5.1.0",
-    "gulp": "^3.9.1",
+    "gulp": "^4.0.2",
     "gulp-autoprefixer": "^7.0.1",
     "gulp-cheerio": "^1.0.0",
     "gulp-imagemin": "^7.1.0",
